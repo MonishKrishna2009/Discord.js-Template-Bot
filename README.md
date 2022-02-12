@@ -1,8 +1,6 @@
-# RicoCozy
+# Starter
 
-## This is the opensource lib of (RicoCozy) Bot!
-
-This is the Version-1 of the bot and this will be the only open source for now!
+## This is the starter lib fo a Discord Bot!
 
 ## How to install
 
@@ -62,6 +60,10 @@ module.exports = {
         console.log(Table.toString())
 }
 ```
+## Adding Database Structures
+
+First of all go to the structures folder.
+[![](Structure)](https://imgur.com/a/MWpooox)
 
 ### Outputs: 
 
