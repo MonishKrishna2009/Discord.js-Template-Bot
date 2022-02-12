@@ -63,19 +63,80 @@ module.exports = {
 ## Adding Database Structures
 
 First of all go to the structures folder.
-[![](Structure)](https://imgur.com/a/MWpooox)
 
-### Outputs: 
+And in the Schema folder you can make a Database Structure there!
+
+### Example
+
+```javascript
+const mongoose = require('mongoose');
+
+const afkSchema = mongoose.Schema({
+    Guild: String,
+    User: String,
+    Reason: String,
+    Date: String
+})
+
+module.exports = mongoose.model('afkk', afkSchema)
+```
+##Handlers
+
+We have our custom handelers. Thanks to [LYX](https://www.youtube.com/lyxcode) Who made the handler. this is the older version but i suggest to see his upcomming video for the new Handler!
+
+When the bot starts the handlers outputes this
 
 ```
-.------------------------------.
-|       Node Connected!        |
-|------------------------------|
-| Logged in as : RicoCozy#2460 |
-| Total-Servers - 1            |
-| Total-Members - 9            |
-'------------------------------'
+.-----------------------------------.
+|           Events Loaded           |
+|-----------------------------------|
+| interactionCreate | ✔ Successful! |
+| interactionCreate | ✔ Successful! |
+| ready             | ✔ Successful! |
+| guildMemberAdd    | ✔ Successful! |
+| channelCreate     | ✔ Successful! |
+| channelDelete     | ✔ Successful! |
+| channelUpdate     | ✔ Successful! |
+| emojiCreate       | ✔ Successful! |
+| emojiDelete       | ✔ Successful! |
+| emojiUpdate       | ✔ Successful! |
+| roleCreate        | ✔ Successful! |
+| roleDelete        | ✔ Successful! |
+| roleUpdate        | ✔ Successful! |
+| interactionCreate | ✔ Successful! |
+| interactionCreate | ✔ Successful! |
+| interactionCreate | ✔ Successful! |
+| interactionCreate | ✔ Successful! |
+'-----------------------------------'
+.-------------------------------.
+|       Commands Loaded!        |
+|-------------------------------|
+| help         | 🔹 SUCCESSFUL! |
+| status       | 🔹 SUCCESSFUL! |
+| userinfo     | 🔹 SUCCESSFUL! |
+| botinfo      | 🔹 SUCCESSFUL! |
+| channelinfo  | 🔹 SUCCESSFUL! |
+| btnroles     | 🔹 SUCCESSFUL! |
+| logs         | 🔹 SUCCESSFUL! |
+| ticket-setup | 🔹 SUCCESSFUL! |
+| welcomesetup | 🔹 SUCCESSFUL! |
+'-------------------------------'
+.--------------------------------.
+|        Node Connected!         |
+|--------------------------------|
+| Logged in as : RageCode++#4984 |
+| Total-Servers - 1              |
+| Total-Members - 6              |
+'--------------------------------'
+.---------------------.
+| Database Connected! |
+|---------------------|
+| DataUsed - infinity |
+'---------------------'
 ```
+## Credits
+
+The main Credits goes to [Lyxcode](https://www.youtube.com/lyxcode) Who made the handlers and some amazing stuff through the project like the Handlers and more
 
 
 ## Contributing
@@ -85,3 +146,6 @@ Please make sure to update tests as appropriate.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
+
+##Copyright
+©  Ragecode 2022
