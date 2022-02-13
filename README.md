@@ -147,5 +147,5 @@ Please make sure to update tests as appropriate.
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
 
-##Copyright
+## Copyright
 ©  Ragecode 2022
